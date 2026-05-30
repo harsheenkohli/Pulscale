@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:scholar.google.com)",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:export.arxiv.org)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36\" \"http://export.arxiv.org/api/query?search_query=all:%22adaptive+quantization%22+AND+all:anomaly+AND+all:edge&start=0&max_results=20\")",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36\" \"http://export.arxiv.org/api/query?search_query=all:%22dynamic+precision%22+AND+all:sensor+AND+all:anomaly&start=0&max_results=20\")",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36\" \"http://export.arxiv.org/api/query?search_query=all:%22adaptive+sampling%22+AND+all:anomaly+AND+all:edge&start=0&max_results=20\")",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36\" \"http://export.arxiv.org/api/query?search_query=all:%22closed-loop%22+AND+all:quantization+AND+all:sensor&start=0&max_results=20\")",
+      "WebFetch(domain:api.semanticscholar.org)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" \"https://api.semanticscholar.org/graph/v1/paper/search?query=adaptive+quantization+anomaly+detection+edge+IoT&limit=20&fields=title,authors,year,abstract,venue,externalIds\")",
+      "Bash(curl -sL -A \"Mozilla/5.0\" \"https://duckduckgo.com/html/?q=%22adaptive+quantization%22+%22anomaly+detection%22+IoT+edge+sensor+feedback+arxiv\")",
+      "Bash(curl -v -A \"Mozilla/5.0\" \"https://api.semanticscholar.org/graph/v1/paper/search?query=adaptive+quantization+anomaly+edge&limit=5\")",
+      "WebFetch(domain:www.bing.com)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 src/conformal_recovery/data/loaders.py)",
+      "Bash(MPLBACKEND=Agg python3 *)",
+      "Bash(pip install *)",
+      "Bash(python3 *)",
+      "Bash(PYTHONPATH=src python3 -m conformal_recovery.serve.build_artifact)",
+      "Bash(PYTHONPATH=src:backend python3 *)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(curl *)",
+      "Read(//private/tmp/**)",
+      "Bash(cat)",
+      "Bash(npx next *)",
+      "Bash(xargs -I {} bash -c 'head -c 200 \"/Users/harsheenkaurkohli/Desktop/Research/Google-Fit/All Data/{}\" | grep -i \"resting\\\\|heart.rate\" && echo \"Found in: {}\"')",
+      "Bash(xargs -I {} bash -c 'echo \"File: {}\"; head -1 \"{}\"')"
+    ]
+  }
+}

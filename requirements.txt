@@ -1,0 +1,25 @@
+# Core scientific stack
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+scipy>=1.11
+
+# ML
+scikit-learn>=1.4
+torch>=2.2
+mapie>=0.8
+lightgbm>=4.1
+pmdarima>=2.0
+
+# Notebooks / dev
+jupyter
+ipykernel
+seaborn
+
+# Backend (used from Day 12)
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Testing
+pytest
